@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анализ вакансий - HH Анализатор</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- Навигационное меню (как раньше) -->
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Анализ вакансий</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="position"><i class="fas fa-user-tie mr-2"></i>Должность:</label>
+                        <input type="text" class="form-control" id="position" placeholder="Введите должность">
+                    </div>
+                    <div class="form-group">
+                        <label for="area"><i class="fas fa-map-marker-alt mr-2"></i>ID региона:</label>
+                        <input type="text" class="form-control" id="area" value="1" placeholder="По умолчанию 1 - Москва">
+                    </div>
+                    <div class="form-group">
+                                                <label for="experience"><i class="fas fa-briefcase mr-2"></i>Опыт работы:</label>
+                        <select class="form-control" id="experience">
+                            <option value="noExperience">Нет опыта</option>
+                            <option value="between1And3">От 1 года до 3 лет</option>
+                            <option value="between3And6">От 3 до 6 лет</option>
+                            <option value="moreThan6">Более 6 лет</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="employment"><i class="fas fa-clock mr-2"></i>Тип занятости:</label>
+                        <select class="form-control" id="employment">
+                            <option value="full">Полная занятость</option>
+                            <option value="part">Частичная занятость</option>
+                            <option value="project">Проектная работа</option>
+                            <option value="volunteer">Волонтерство</option>
+                        </select>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg"><i class="fas fa-search mr-2"></i>Анализировать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
